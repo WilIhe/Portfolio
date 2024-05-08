@@ -7,7 +7,7 @@ import '../pages/Home.css'
 const Home = () =>
 {
     return (
-        <Container className='area'>
+        <Container maxWidth={false} className="area">
             <Header />
             <SideBar />
         </Container>
