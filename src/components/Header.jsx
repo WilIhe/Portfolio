@@ -4,7 +4,7 @@ import { Menu } from "@mui/icons-material";
 const Header = () =>
 {
     return(
-        <AppBar sx={{backgroundColor: 'grey'}}>
+        <AppBar sx={{backgroundColor: 'rgb(0, 0, 26)'}}>
           {/* Add flex property */}
           <Toolbar sx={{justifyContent: 'space-between'}}>
             <Box>
@@ -13,7 +13,7 @@ const Header = () =>
               </Typography>
             </Box>
 
-            <IconButton>
+            <IconButton sx={{color: 'white'}}>
               <Menu />
             </IconButton>
           </Toolbar>
