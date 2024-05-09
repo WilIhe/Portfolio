@@ -1,5 +1,6 @@
-import { Typography, Box, Toolbar, AppBar, IconButton } from "@mui/material";
+import { Typography, Box, Toolbar, AppBar, IconButton, Button } from "@mui/material";
 import { Menu } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
 const Header = () =>
 {
@@ -13,9 +14,12 @@ const Header = () =>
               </Typography>
             </Box>
 
-            <IconButton sx={{color: 'white'}}>
-              <Menu />
-            </IconButton>
+            <Box>
+              <Button sx={{color: 'white'}} component = {Link} to='/AboutPage'> About </Button>
+              <Button sx={{color: 'white'}}> Projects </Button>
+              <Button sx={{color: 'white'}}> Experinece </Button>
+            </Box>
+
           </Toolbar>
         </AppBar>
     );
